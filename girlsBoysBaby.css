@@ -9,12 +9,15 @@
 } */
 
 .bg-col{
-    background-color: rgba(252,102,0,255)    ;
+    background-color:  rgb(245,194,88)
+    ;
     /* opacity: 0.85; */
 }
 
 .bg-col2{
-    background-color: rgba(250,187,58,255)
+    background-color:  rgb(225,125,7)
+
+
     ;
     padding-left: 1.3rem;
 }
@@ -26,3 +29,14 @@
 h4{
     padding: 1.3rem 1.3rem 1.3rem 0;
 }
+
+.bg-col-boy{
+    background-color: rgba(174,218,229,255)  ;
+}
+
+.bg-col-boy2{
+    background-color: rgb(125,140,140)
+    ;
+    padding-left: 1.3rem;
+}
+

@@ -9,8 +9,8 @@
 } */
 
 .bg-col{
-    background-color:  rgb(245,194,88)
-    ;
+    background-color:  rgb(245,194,88);
+    /* position: fixed ; */
     /* opacity: 0.85; */
 }
 
@@ -31,7 +31,9 @@ h4{
 }
 
 .bg-col-boy{
-    background-color: rgba(174,218,229,255)  ;
+    background-color: rgba(174,218,229,255);
+    /* position: fixed; */
+
 }
 
 .bg-col-boy2{

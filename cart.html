@@ -4,9 +4,155 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel='stylesheet' href='./style_cart.css'>
 </head>
 <body>
-  <h1>Cart</h1>
+
+  <div class='container-fluid'>
+
+    <!--row for nav bar -->
+    <header class='row m-2 header_border'>
+      <h2>Nav bar</h2>
+    </header>
+  
+    <!--row for main content-->
+    <main>
+      <!--row for item1-->
+      <div class='row item1 m-2 border_thick'>
+        <div class='col picture'>
+          <img src='./images_cart/dress.jpeg' alt='dress' class='img-fluid border border-dark'>
+        </div>
+        <div class='col name'>
+          <u><h2>Dress</h2></u>
+        </div>
+        <div class='col price'>
+          <div class='row'>
+            <h2>Price per unit</h2>
+          </div>
+          <div class='row'>
+            <h2>$2</h2>
+          </div>
+        </div>
+        <div class='col quantity'>
+          <div class='row'>
+            <h2>Quantity</h2>
+          </div>
+          <div class='row'>
+            <h2>3</h2>
+          </div>
+        </div>
+        <div class='col total_price'>
+          <div class='row'>
+            <h2>Total price: $7 ($2*3 + $1)</h2>
+          </div>
+          <div class='row shipping price'>
+            <h2>Shipping price: $1</h2>
+          </div>
+        </div>
+        <div class='col delete_item'>
+          <button type='button'><h2>Delete</h2></button>
+        </div>
+      </div>
+      
+      <!--row for item2-->
+      <div class='row item2 m-2 border_thick'>
+        <div class='col picture'>
+          <img src='./images_cart/shorts.jpeg' alt='short' class='img-fluid border border-dark'>
+        </div>
+        <div class='col name'>
+          <u><h2>Short</h2></u>
+        </div>
+        <div class='col price'>
+          <div class='row'>
+            <h2>Price per unit</h2>
+          </div>
+          <div class='row'>
+            <h2>$1</h2>
+          </div>
+        </div>
+        <div class='col quantity'>
+          <div class='row'>
+            <h2>Quantity</h2>
+          </div>
+          <div class='row'>
+            <h2>2</h2>
+          </div>
+        </div>
+        <div class='col total_price'>
+          <div class='row'>
+            <h2>Total price: $4 ($1*2 + $2)</h2>
+          </div>
+          <div class='row shipping price'>
+            <h2>Shipping price: $2</h2>
+          </div>
+        </div>
+        <div class='col delete_item'>
+          <button type='button'><h2>Delete</h2></button>
+        </div>
+      </div>
+  
+  
+      <!--row for item3-->
+      <div class='row item3 m-2 border_thick'>
+        <div class='col picture'>
+          <img src='./images_cart/top.jpeg' alt='top' class='img-fluid border border-dark'>
+        </div>
+        <div class='col name'>
+          <u><h2>Top</h2></u>
+        </div>
+        <div class='col price'>
+          <div class='row'>
+            <h2>Price per unit</h2>
+          </div>
+          <div class='row'>
+            <h2>$0.5</h2>
+          </div>
+        </div>
+        <div class='col quantity'>
+          <div class='row'>
+            <h2>Quantity</h2>
+          </div>
+          <div class='row'>
+            <h2>6</h2>
+          </div>
+        </div>
+        <div class='col total_price'>
+          <div class='row'>
+            <h2>Total price: $5 ($0.5*6 + $2)</h2>
+          </div>
+          <div class='row shipping price'>
+            <h2>Shipping price: $2</h2>
+          </div>
+        </div>
+        <div class='col delete_item'>
+          <button type='button'><h2>Delete</h2></button>
+        </div>
+      </div>
+      <br />
+      
+      <!--row for button-->
+      <div class='row button m-2'>
+        <div class='col-3'>
+          <button type='button'><h2>Delete all items</h2></button>
+        </div>
+        <div class='col-3'>
+          <button type='button'><h2>Checkout</h2></button>
+        </div>
+      </div>
+    </main>
+
+
+    <!--row for footer-->
+    <footer class='row m-2 footer_border'>
+      <h2>Footer</h2>
+    </footer>
+  </div>
+
+
+
+  
+
 </body>
 </html>

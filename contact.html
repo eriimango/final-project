@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel='stylesheet' href='./style_contact.css'>
+</head>
+<body>
+  <div class='container-fluid'>  
+    <!--Row for header-->
+    <header class='row m-2 header_border'>
+      <h2>Nav bar</h2>
+    </header>
+
+    <!--row for Contat us text-->
+    <div class='row contact_us m-2'>
+      <h2>Contact us</h2>
+    </div>
+
+    <!--main row for form-->
+    <main class='row m-2'> 
+
+      <section class='col col-xl-6 contact border border-dark m-2'>
+        <form>
+          <div class="form-group ">
+            <label for="exampleInputName">Name</label>
+            <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+          </div>
+          
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Message" class="form-control" id="message-label" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </form>
+      </section>      
+      
+    </main>
+
+    <!--row for footer-->
+    <footer class='row m-2 footer_border fixed-bottom'>
+      <h2>Footer</h2>
+    </footer>
+  
+</body>
+</html>

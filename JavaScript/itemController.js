@@ -4,7 +4,7 @@ class outfitController {
     this.outfitArr = [];
   }
 
-  addItem(picUrl, price, nameDescription) {
+  addOutfit(picUrl, price, nameDescription) {
     let newOutfit = {
       id: this.currentId++,
       picUrl,
@@ -12,11 +12,32 @@ class outfitController {
       nameDescription      
     }
 
-    this.outfitArr.push(newOutfit)
+    this.outfitArr.push(newOutfit);
+    this.setLocalStorage();
   }
 
-}
+  setLocalStorage() {
+    let storeOutfit = JSON.stringify(this.outfit);
+    localStorage.setItem('outfit', storeOutfit);
+    let currentId = JSON.stringify(this.currentId);
+    localStorage.setItem('currentId', currentId);
+  }
+
+  loadLocalStorage() {
+    if(localStorage.getItem('outfit')) {
+      
+    }
+    
+    if(localStorage.getItem('currentId')) {
+
+    }
+  };
+
+};
+
+
+
 
 let newOutfit = new outfitController();
-newOutfit.addItem('someUrl',15, 'dress red');
+newOutfit.addOutfit('someUrl',15, 'dress red');
 console.log(newOutfit)

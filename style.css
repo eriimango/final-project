@@ -4,6 +4,32 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 color: black;
 }
 
+.margin{
+  margin-bottom: 45px;
+}
+
+.bg-1{
+
+}
+
+.bg-2{
+
+}
+
+.bg-3{
+
+}
+
+.bg-4{
+  background-color:rgb(55, 176, 206);
+  color: white;
+}
+
+.container-fluid{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
 .loader {
     border-top: 16px solid rgb(111, 111, 168);
     border-right: 16px solid rgb(55, 176, 206);
@@ -54,26 +80,40 @@ color: black;
   
   
 .navbar{
-    overflow:hidden;
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 0;
+    font-size: 14px;
+    letter-spacing: 4px;
 }
 
-.navbar a {
-float:left;
-display: block;
-color:black;
-text-align: left;
-padding: 14px 20px;
-text-decoration: none;
-}
-.nav a.right {
-float: right;
+.navbar li a, .navbar .navbar-brand{
+  color:rgb(55, 176, 206);
 }
 
-.navbar a:hover{
-    color:blueviolet;
+.navbar-nav li a:hover, .navbar-nav li.active a{
+  color:blueviolet;
 }
-.my-slides {
-    width:100%;
+
+.navbar-default .navbar-toggle{
+    border-color: transparent;
+    color: blueviolet;
+}
+
+.carousel{
+  height: 60vh;
+}
+
+
+.carousel-indicators li{
+  border-color: white;
+}
+
+.carousel-indicators li.active{
+  background-color: blueviolet;
 }
 
 .footer{

@@ -6,25 +6,25 @@ let outfitList = document.getElementById("outfitList");
 let outfitRows = document.getElementById("outfitRows");
 let addOutfitButton = document.getElementById("addOutfitButton");
 
-//add outfit to outfitList
-const addItemToOutfitList = (outfit) => {
-  let newRow = document.createElement('tr');
-  newRow.innerHTML = 
-  `<tr>
-    <th id='row'><img class='img-thumbnail' src='${outfit.picUrl}'></th>
-    <td>${outfit.price}</td>
-    <td>${outfit.nameDescription}</td>
-  </tr>`;
+outfitManager.loadLocalStorage();
 
-  //add new row with item to table
-  outfitRows.append(newRow);
+const renderListFromLocal = () => {
+  // we want to loop through our array and display each item from local storage by adding it to our last
+  let outfitArray = outfitManager.outfitArr;
 
+  for (let i = 0; i < outfitArray.length; i++) {
+    let newRow = document.createElement('tr');
+    newRow.setAttribute('data-id', outfitArray[i].id);
+    newRow.innerHTML = 
+    `<th id='row'><img class='img-thumbnail' src='${outfitArray[i].picUrl}'></th>
+     <td>${outfitArray[i].price}</td>
+     <td>${outfitArray[i].nameDescription}</td>
+    `
+    outfitRows.append(newRow);
+  }
+}
 
-};
-
-
-
-
+renderListFromLocal();
 
 addOutfitButton.addEventListener("click", function(event){
   event.preventDefault();
@@ -33,14 +33,12 @@ addOutfitButton.addEventListener("click", function(event){
   let outfitNameDescription = document.getElementById("outfitNameDescription");
 
   outfitManager.addOutfit(outfitURL.value, outfitPrice.value, outfitNameDescription.value);
-  addItemToOutfitList({
-      picUrl: outfitURL.value,
-      price: outfitPrice.value,
-      nameDescription: outfitNameDescription.value
-      
-  });
-
+  outfitRows.innerHTML = '';
+  renderListFromLocal();
+  
   outfitURL.value = '';
   outfitPrice.value = '';
   outfitNameDescription.value = '';
 })
+
+

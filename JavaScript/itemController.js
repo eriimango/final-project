@@ -1,5 +1,5 @@
 class outfitController {
-  constructor(currentId = 0, ){
+  constructor(currentId = 0 ){
     this.currentId = currentId;
     this.outfitArr = [];
   }
@@ -28,7 +28,7 @@ class outfitController {
       let outfitArrayJson = localStorage.getItem('outfit');
       console.log(outfitArrayJson);
       console.log(JSON.parse(outfitArrayJson));
-      this.outfit = JSON.parse(outfitArrayJson);
+      this.outfitArr = JSON.parse(outfitArrayJson);
     }
     
     if(localStorage.getItem('currentId')) {
@@ -40,7 +40,7 @@ class outfitController {
 };
 
 
-
+console.log(JSON.stringify(this.outfitArr))
 
 // let newOutfit = new outfitController();
 // newOutfit.addOutfit('someUrl',15, 'dress red');
